@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Szablon z danymi</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    #canvasContainer {
+      margin-top: 20px;
+    }
+    canvas {
+      border: 2px dashed #ccc;
+      cursor: crosshair;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Wprowadź dane</h2>
+  <label>Battle Roster <input type="text" id="BattleRoster"></label>
+  <label>Name <input type="text" id="Name"></label>
+  <label>Date: <input type="text" id="Date"></label>
+  <label>TIme: <input type="text" id="Time"></label>
+  <button onclick="generateImage()">Generuj obraz</button>
+
+  <div id="canvasContainer">
+    <p id="coords">Pozycja: (x: -, y: -)</p>
+    <canvas id="templateCanvas" width="800" height="700"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
